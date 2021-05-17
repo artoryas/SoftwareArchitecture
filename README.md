@@ -1,3 +1,3 @@
 # SoftwareArchitecture
-Tasks for homework
+Tasks for homework. 
 Created only for sharing tasks with teacher
