@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config
+data:
+  greeting: Salem, bari durys!
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: secret-config
+type: Opaque
+data:
+  user: bXl1c2Vy
+  db: bXlkYg==
+  password: bXlwYXNz

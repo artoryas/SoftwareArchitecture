@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "135f3811-4c61-406f-874e-ca588928bcc7",
+		"name": "SoftwareArchitecture",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.17.76.128:32689/employees",
+					"protocol": "http",
+					"host": [
+						"172",
+						"17",
+						"76",
+						"128"
+					],
+					"port": "32689",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit employee By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"Marina\",\r\n    \"salary\": 11500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.17.76.128:32689/employees/edit",
+					"protocol": "http",
+					"host": [
+						"172",
+						"17",
+						"76",
+						"128"
+					],
+					"port": "32689",
+					"path": [
+						"employees",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://172.17.76.128:32689/employees/4",
+					"protocol": "http",
+					"host": [
+						"172",
+						"17",
+						"76",
+						"128"
+					],
+					"port": "32689",
+					"path": [
+						"employees",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alexander\",\r\n    \"salary\": 20000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.17.76.128:32689/employees/add",
+					"protocol": "http",
+					"host": [
+						"172",
+						"17",
+						"76",
+						"128"
+					],
+					"port": "32689",
+					"path": [
+						"employees",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

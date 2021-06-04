@@ -1,0 +1,9 @@
+replicaCount: 2
+
+image: dossaan/crud-node:latest
+
+postgresql:
+  username: myuser
+  password: mypass
+  db: mydb
+  host: "postgres"
